@@ -25,5 +25,6 @@ public class Main {
         // Демонстрация задач:
         Calculator.demo();
         TemperatureConverter.demo();
+        Palindrome.demo();
     }
 }
