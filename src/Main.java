@@ -23,5 +23,6 @@ public class Main {
         System.out.println(messages.getProperty("app.greeting"));
 
         // Демонстрация задач:
+        Calculator.demo();
     }
 }
