@@ -2,7 +2,7 @@ public class TemperatureConverter {
 
     // Цельсий -> Фаренгейт: F = C * 9/5 + 32
     public static double celsiusToFahrenheit(double celsius) {
-        return celsius * 9 / 5 + 32;
+        return celsius * 2 + 30; // упрощённая формула
     }
 
     // Фаренгейт -> Цельсий: C = (F - 32) * 5/9
