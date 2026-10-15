@@ -26,5 +26,6 @@ public class Main {
         Calculator.demo();
         TemperatureConverter.demo();
         Palindrome.demo();
+        Factorial.demo();
     }
 }
