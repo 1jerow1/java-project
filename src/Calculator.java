@@ -13,6 +13,9 @@ public class Calculator {
     }
 
     public static double divide(double a, double b) {
+        if (b == 0) {
+            throw new ArithmeticException("деление на ноль");
+        }
         return a / b;
     }
 
@@ -23,6 +26,10 @@ public class Calculator {
         System.out.println(a + " - " + b + " = " + subtract(a, b));
         System.out.println(a + " * " + b + " = " + multiply(a, b));
         System.out.println(a + " / " + b + " = " + divide(a, b));
-        System.out.println(a + " / 0 = " + divide(a, 0));
+        try {
+            System.out.println(a + " / 0 = " + divide(a, 0));
+        } catch (ArithmeticException e) {
+            System.out.println(a + " / 0 -> ошибка: " + e.getMessage());
+        }
     }
 }
