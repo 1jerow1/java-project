@@ -1,9 +1,11 @@
 public class Palindrome {
 
-    // Слово - палиндром, если читается одинаково в обе стороны
+    // Слово - палиндром, если читается одинаково в обе стороны.
+    // Регистр букв не учитывается: "Казак" - палиндром.
     public static boolean isPalindrome(String word) {
-        String reversed = new StringBuilder(word).reverse().toString();
-        return word.equals(reversed);
+        String normalized = word.toLowerCase();
+        String reversed = new StringBuilder(normalized).reverse().toString();
+        return normalized.equals(reversed);
     }
 
     public static void demo() {
